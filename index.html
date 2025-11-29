@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regall Vcrow Hosting - Panel Pterodactyl & Sewa Bot Premium</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Link ke file CSS eksternal -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Custom Wave Background -->
+    <div class="wave-background"></div>
+
+    <!-- Main Layout Container -->
+    <div class="min-h-screen relative">
+        
+        <!-- Mobile Sidebar Toggle Button -->
+        <button id="sidebar-toggle" class="md:hidden fixed top-4 left-4 p-2 bg-neon-blue glass z-50 rounded-full transition duration-300 hover:scale-110 shadow-lg">
+             <i data-lucide="menu" class="w-6 h-6 text-white"></i>
+        </button>
+
+        <!-- Sidebar Kiri (Futuristik & Glassmorphism) -->
+        <aside id="sidebar" class="glass fixed md:static top-0 left-0 h-full p-6 transition-all duration-400 sidebar-futuristic z-40">
+            <div class="flex flex-col h-full">
+                <!-- Sidebar Logo/Title -->
+                <div class="mb-12 pt-2 pb-6 border-b border-neon-blue/40">
+                    <h1 class="text-3xl font-black text-neon-blue tracking-wider">R V C R O W</h1>
+                    <p class="text-sm text-text-white/60 mt-1">Sistem Panel Premium</p>
+                </div>
+
+                <!-- Menu Items -->
+                <nav class="space-y-3 flex-grow" id="sidebar-nav">
+                    <a href="#beranda" data-section="beranda" class="sidebar-link active flex items-center space-x-3 p-3 rounded-xl font-medium">
+                        <i data-lucide="home" class="w-6 h-6"></i>
+                        <span class="text-lg">Beranda</span>
+                    </a>
+                    <a href="#grup-bot" data-section="grup-bot" class="sidebar-link flex items-center space-x-3 p-3 rounded-xl font-medium">
+                        <i data-lucide="users" class="w-6 h-6"></i>
+                        <span class="text-lg">Grup Bot / Saluran</span>
+                    </a>
+                    <a href="#hosting-panel" data-section="hosting-panel" class="sidebar-link flex items-center space-x-3 p-3 rounded-xl font-medium">
+                        <i data-lucide="server" class="w-6 h-6"></i>
+                        <span class="text-lg">Hosting Panel</span>
+                    </a>
+                    <a href="#sewa-bot" data-section="sewa-bot" class="sidebar-link flex items-center space-x-3 p-3 rounded-xl font-medium">
+                        <i data-lucide="bot" class="w-6 h-6"></i>
+                        <span class="text-lg">Sewa Bot</span>
+                    </a>
+                </nav>
+                
+                <!-- Tentang Developer Link (Always visible) -->
+                 <div class="mt-auto">
+                    <a href="https://wa.me/6281523968059" target="_blank" class="w-full flex items-center space-x-3 p-3 rounded-xl transition duration-200 bg-green-500 text-white hover:bg-green-600 glow-on-hover">
+                        <i data-lucide="contact" class="w-5 h-5"></i>
+                        <span class="text-sm font-medium">Chat Developer (24/7)</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Content Area -->
+        <div id="content" class="content-area pt-4 md:pt-10 transition-all duration-300 min-h-screen">
+            
+            <!-- Header (Pojok Kanan Atas) -->
+            <header class="header-bar flex justify-end items-center mb-16 px-4 md:px-8">
+                <div class="flex items-center space-x-3 fade-in-section">
+                    <div class="text-right">
+                        <p class="text-xs text-text-white/80 font-medium">Regall Vcrow Hosting</p>
+                        <p class="text-[10px] text-neon-blue/70">Layanan Premium</p>
+                    </div>
+                    <img src="https://img1.pixhost.to/images/10489/665555992_media.jpg" 
+                         alt="Logo Regall Vcrow" 
+                         class="w-10 h-10 rounded-full border-2 border-neon-blue/70 shadow-xl"
+                         onerror="this.onerror=null;this.src='https://placehold.co/40x40/1a73e8/f5f5f5?text=RV';"
+                    >
+                </div>
+            </header>
+
+            <!-- Container Konten Dinamis -->
+            <div id="main-content-container" class="max-w-7xl mx-auto px-4 md:px-8 pb-20 space-y-24">
+                
+                <!-- SECTION 0: Beranda (Halaman Default) - DENGAN HOLOGRAM -->
+                <section id="section-beranda" class="content-section" style="display: block;">
+                    <div class="glass p-10 rounded-2xl text-center fade-in-section">
+                        <!-- Hologram Effect Container -->
+                        <div class="hologram-container mb-8">
+                            <h1 class="hologram-text relative">REGALL VCROW</h1>
+                        </div>
+                        
+                        <p class="text-xl text-text-white/80 mb-8">Penyedia layanan Panel Pterodactyl dan Bot premium dengan jaminan stabilitas 24/7 dan harga terbaik.</p>
+                        <a href="#hosting-panel" data-section="hosting-panel" class="inline-block py-3 px-8 rounded-xl bg-neon-blue text-white text-lg font-bold transition duration-300 hover:bg-neon-blue/90 glow-on-hover sidebar-nav-trigger">
+                            Lihat Paket Hosting Kami
+                        </a>
+                    </div>
+
+                    <!-- Tentang Developer -->
+                    <div class="mt-12 glass p-8 rounded-2xl text-center fade-in-section" id="tentang-developer">
+                        <h2 class="text-3xl font-bold mb-4 text-neon-blue">Kontak Developer</h2>
+                        <p class="text-lg text-text-white/80 mb-4">Hubungi kami untuk pertanyaan, konsultasi, atau custom order.</p>
+                        
+                        <div class="mb-6 flex items-center justify-center space-x-4">
+                            <i data-lucide="phone" class="w-6 h-6 text-neon-blue"></i>
+                            <p class="text-2xl font-mono tracking-wider">6281523968059</p>
+                        </div>
+
+                        <a href="https://wa.me/6281523968059" target="_blank" class="inline-flex items-center py-3 px-8 rounded-xl bg-green-500 text-white text-lg font-bold transition duration-300 hover:bg-green-600 glow-on-hover">
+                            <i data-lucide="whatsapp" class="w-6 h-6 inline mr-2 fill-white"></i> Chat Developer
+                        </a>
+                    </div>
+                </section>
+
+                <!-- SECTION 1: Grup Bot / Saluran -->
+                <section id="section-grup-bot" class="content-section" style="display: none;">
+                    <h2 class="text-4xl font-black mb-12 border-l-4 border-neon-blue pl-4 fade-in-section">Grup Bot & Saluran Komunitas</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        
+                        <!-- Card 1: WhatsApp Group -->
+                        <div class="glass p-6 rounded-2xl transition duration-300 card-panel-hover fade-in-section">
+                            <div class="flex items-center space-x-4 mb-4">
+                                <i data-lucide="message-square-text" class="w-8 h-8 text-neon-blue"></i>
+                                <h3 class="text-xl font-bold">WhatsApp Group Komunitas</h3>
+                            </div>
+                            <p class="text-text-white/70 mb-6">Bergabunglah dengan grup resmi kami untuk diskusi, dukungan cepat, dan informasi terbaru seputar layanan hosting dan bot.</p>
+                            <a href="https://chat.whatsapp.com/FCUxHAwa3Vu9zxJkEWoZBU" target="_blank" class="block w-full text-center py-3 rounded-xl bg-neon-blue text-white font-semibold transition duration-300 hover:bg-neon-blue/80 glow-on-hover">
+                                <i data-lucide="send" class="w-4 h-4 inline mr-2"></i> Join Sekarang
+                            </a>
+                        </div>
+                        
+                        <!-- Card 2: WhatsApp Channel -->
+                        <div class="glass p-6 rounded-2xl transition duration-300 card-panel-hover fade-in-section">
+                             <div class="flex items-center space-x-4 mb-4">
+                                <i data-lucide="megaphone" class="w-8 h-8 text-neon-blue"></i>
+                                <h3 class="text-xl font-bold">Saluran Pengumuman Resmi</h3>
+                            </div>
+                            <p class="text-text-white/70 mb-6">Dapatkan pengumuman penting, diskon eksklusif, dan pembaruan sistem langsung dari channel resmi Regall Vcrow.</p>
+                            <a href="https://whatsapp.com/channel/0029Vb7Az4g0rGiUtApTA32j" target="_blank" class="block w-full text-center py-3 rounded-xl bg-neon-blue text-white font-semibold transition duration-300 hover:bg-neon-blue/80 glow-on-hover">
+                                <i data-lucide="send" class="w-4 h-4 inline mr-2"></i> Join Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 2: List Panel Hosting (PTERODACTYL) -->
+                <section id="section-hosting-panel" class="content-section" style="display: none;">
+                    <h2 class="text-4xl font-black mb-12 text-center fade-in-section">PANEL PTERODACTYL – <span class="text-neon-blue">REGALL VCROW</span></h2>
+                    
+                    <!-- Kelebihan Layanan -->
+                    <div class="mt-12 p-8 glass rounded-2xl grid md:grid-cols-2 gap-8 items-center border-2 border-neon-blue/30 mb-12 fade-in-section">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4 border-b border-neon-blue/50 pb-2 text-neon-blue">Kelebihan Layanan Kami</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-center">
+                                    <i data-lucide="check-circle" class="w-5 h-5 mr-3 text-lime-400"></i>
+                                    Server stabil 24/7
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="shield" class="w-5 h-5 mr-3 text-lime-400"></i>
+                                    DDoS protection (Keamanan Maksimal)
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="cloud" class="w-5 h-5 mr-3 text-lime-400"></i>
+                                    Menggunakan VPS legal
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="calendar-check" class="w-5 h-5 mr-3 text-lime-400"></i>
+                                    Garansi full 30 hari
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="repeat" class="w-5 h-5 mr-3 text-lime-400"></i>
+                                    Bisa diperpanjang kapan saja
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="headphones" class="w-5 h-5 mr-3 text-lime-400"></i>
+                                    Support 24/7
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/6281523968059" target="_blank" class="w-full h-16 flex items-center justify-center py-4 px-8 rounded-xl bg-neon-blue text-white text-xl font-bold transition duration-300 hover:bg-neon-blue/90 glow-on-hover shadow-lg">
+                            <i data-lucide="shopping-cart" class="w-6 h-6 inline mr-3"></i> Pesan Sekarang
+                        </a>
+                    </div>
+                    
+                    <!-- Paket Hosting Grid -->
+                    <div id="hosting-cards-container" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Hosting Cards will be populated here by JS -->
+                    </div>
+                </section>
+
+                <!-- SECTION 3: SEWA BOT -->
+                <section id="section-sewa-bot" class="content-section" style="display: none;">
+                    <h2 class="text-4xl font-black mb-12 text-center fade-in-section">SEWA BOT – <span class="text-neon-blue">REGALL VCROW</span></h2>
+                    
+                    <!-- Pricing Card Grid -->
+                    <div id="bot-cards-container" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Bot Cards will be populated here by JS -->
+                    </div>
+                </section>
+
+                <footer class="text-center text-sm text-text-white/50 pt-10 border-t border-neon-blue/10">
+                    <p>&copy; 2024 Regall Vcrow Hosting. Premium Service for Hosting & Bots.</p>
+                </footer>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- HTML Templates (Hidden from view) -->
+    <!-- Template Kartu Hosting -->
+    <template id="hosting-card-template">
+        <div class="glass p-6 rounded-2xl transition duration-300 card-panel-hover flex flex-col justify-between border-2 border-transparent fade-in-section"
+            data-name=""
+        >
+            <div>
+                <div class="text-center mb-4">
+                    <h3 class="text-2xl font-extrabold text-neon-blue/90 mb-1" data-id="name"></h3>
+                    <p class="text-4xl font-black" data-id="price"></p>
+                </div>
+                <ul class="space-y-3 mt-6 border-t border-text-white/20 pt-4">
+                    <li class="flex items-center text-text-white/90">
+                        <i data-lucide="cpu" class="w-5 h-5 mr-3 text-neon-blue/80"></i>
+                        <span class="font-medium">RAM:</span> <span class="ml-auto" data-id="ram"></span>
+                    </li>
+                    <li class="flex items-center text-text-white/90">
+                        <i data-lucide="hard-drive" class="w-5 h-5 mr-3 text-neon-blue/80"></i>
+                        <span class="font-medium">Disk:</span> <span class="ml-auto" data-id="disk"></span>
+                    </li>
+                    <li class="flex items-center text-text-white/90">
+                        <i data-lucide="gauge" class="w-5 h-5 mr-3 text-neon-blue/80"></i>
+                        <span class="font-medium">CPU:</span> <span class="ml-auto" data-id="cpu"></span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Tombol "Beli" Baru -->
+            <a href="https://wa.me/6281523968059" target="_blank" class="block text-center mt-6 py-3 rounded-xl bg-neon-blue text-white font-semibold transition duration-300 hover:bg-neon-blue/90 glow-on-hover">
+                <i data-lucide="shopping-cart" class="w-4 h-4 inline mr-2"></i> Beli Sekarang
+            </a>
+        </div>
+    </template>
+
+    <!-- Template Kartu Sewa Bot -->
+    <template id="bot-card-template">
+        <div class="glass p-6 rounded-2xl transition duration-300 card-panel-hover flex flex-col justify-between border-2 border-transparent fade-in-section"
+            data-is-best=""
+        >
+            <div>
+                <div class="text-center mb-6">
+                    <h3 class="text-xl font-extrabold" data-id="duration"></h3>
+                    <p class="text-5xl font-black text-neon-blue my-2">Rp<span data-id="price"></span></p>
+                </div>
+                <ul class="space-y-3 mt-6">
+                    <!-- Features list will be here -->
+                </ul>
+            </div>
+            <a href="https://wa.me/6281523968059" target="_blank" class="block text-center mt-6 py-3 rounded-xl bg-neon-blue text-white font-semibold transition duration-300 hover:bg-neon-blue/80 glow-on-hover">
+                Pesan Sekarang
+            </a>
+        </div>
+    </template>
+
+    <!-- Link ke file JavaScript eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>
+
